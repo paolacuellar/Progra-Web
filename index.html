@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--Fuente de Google-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+    <link href="css/estilo.css" rel="stylesheet">
+    <title>LA ORUGA INTELIGENTE</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/Logo.png" alt="logo" height="200">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="perfil">
+        <img src="img/default.png">
+        <h1>Nombre de usuario</h1>
+        <p>DescripcionDescripcionDescripcionDescripcionDescripcion</p>
+        <h3><form action="php/cambiarFoto.php" method="POST" enctype="multipart/form-data">
+            Cambiar Foto de perfil: <input name="archivo" type= "file" accept=".jpg, .jpeg, .png" required />
+            <input type="submit" name="subir" value="subir">
+        </form></h3>
+    </section>
+
+    <section id="Preguntas">
+        <section class="recuadro">
+            <h2>¿Pregunta 1?</h2>
+            <p class= "parrafo">
+                DescripcionDescripcionDescripcionDescripcionDescripcion
+            </p>
+            <a href="" class="boton">Ver Respuestas</a><br><br>
+        </section>
+
+        <section class="recuadro">
+            <h2>¿Pregunta 2?</h2>
+            <p class= "parrafo">
+                DescripcionDescripcionDescripcionDescripcionDescripcion
+            </p>
+            <a href="" class="boton">Ver Respuestas</a><br><br>
+        </section>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2021 Fusufum</p>
+    </footer>
+   
+</body>
+</html>

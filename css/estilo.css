@@ -1,0 +1,187 @@
+ @font-face{ /*Atributo que nos permite importar fuentes personalizadas*/
+    font-family: 'FuenteTitulos';
+    src: url(fuentes/Rokkit/Rokkitt-ExtraBold.ttf);
+ }
+
+ @font-face{ 
+    font-family: 'FuenteDescripcion';
+    src: url(fuentes/Rokkit/Rokkitt-Regular.ttf);
+ }
+
+ @font-face{ 
+    font-family: 'FuenteBotones';
+    src: url(fuentes/Oswald/Oswald-Medium.ttf);
+ }
+
+ @font-face{ 
+    font-family: 'FuenteUsuarios';
+    src: url(fuentes/YanoneKaffesatz/YanoneKaffeesatz-SemiBold.ttf);
+ }
+
+ @font-face{
+    font-family: 'FuenteRespuestas';
+    src: url(fuentes/Rokkit/Rokkitt-Regular.ttf);
+ }
+
+ @font-face{
+    font-family: 'FuenteFooter';
+    src: url(fuentes/Oswald/Oswald-Bold.ttf);
+ }
+
+ @font-face{
+    font-family: 'FuenteInformacion';
+    src: url(fuentes/BebasNeue-Regular.ttf);
+ }
+
+ @font-face{ 
+    font-family: 'FuenteCampos';
+    src: url(fuentes/Oswald/Oswald-Regular.ttf);
+ }
+
+ @font-face{ 
+    font-family: 'FuenteAdvertencia';
+    src: url(fuentes/Oswald/Oswald-Regular.ttf);
+ }
+
+
+body{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto; /* Centra el contenido, Vertical-Horizontal */
+}
+
+header{
+    height: 16vh; /* vh=viewport height porcentaje del alto de la pantalla 100px aprox*/
+    width: 100%;
+    max-width: 900px;
+    margin: 20px 0px;
+    border: 2px solid #000;
+}
+
+header #logo{
+    height: 16vh;
+    float: left; /* Coloca el logo a la izquierda */
+}
+
+header #logo img{
+    height: 16vh;
+}
+
+header .menu{
+    height: 16vh;
+    float: right; /* Coloca el menu a la izquierda */
+}
+
+header .menu ul li{
+    list-style: none; /* Quita los puntos de lista */
+    float:left; /* Pone la lista horizontal, hacia la izquierda*/
+}
+
+header .menu ul li a{
+    background: #19113a;
+    text-decoration: none; /* Quitar el subrayado */
+    padding: 10px 15px; /* Relleno */
+    color:white;
+    font-size: 1rem; /* Equivalente a 16vh */
+}
+
+header .menu ul li a:hover{ /* Para que cambie de color cuando se pone el cursor sobre él uwu */
+    background: #a179a6;
+    color:black;
+}
+
+/*---------------------- PERFIL DE USUARIO ----------------------*/
+#perfil{
+    height: 40vh; /* 250 aprox*/
+    margin: 20px 0px;
+    border: 2px solid #000;
+}
+
+#perfil img{
+    height: 40vh;
+    float: left;
+    border: 2px solid #000;
+}
+
+#perfil h1{
+    font-family: 'FuenteUsuarios';
+    font-size: 3.1rem; /* Equivalente a 50 px */
+    color: black;
+    text-align: center;
+}
+
+#perfil p{
+    /*font-family: 'DotGothic16', sans-serif;*/
+    color:black;
+    text-align: center;
+}
+
+#Preguntas{
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden; /* el contenido es recortado y no se muestran barras de posicion, sin barritas del desplazamiento*/
+    border: 0px solid;
+    margin: 20px 0px;
+}
+
+#Preguntas .recuadro{
+   /* width: 280px;*/
+    overflow: hidden;
+    /*float: left;*/
+    padding: 5px; /*pixeles*/
+    text-align: left;
+    color: blue;
+    margin-left: 8px;
+    margin-right: 8px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#Preguntas .recuadro h2{
+    font-family: 'FuenteTitulos';
+}
+
+#Preguntas .recuadro p{
+    font-family: 'FuenteDescripcion';
+    color: black;
+    text-align: justify;
+}
+
+.boton{
+    text-decoration: none;
+    border: 1px solid blueviolet;
+    padding: 10px 20px; /* margenes verticales margenes horizontales */
+    float:right;
+    /*border: 2px solid #000;*/
+}
+
+.boton:hover{
+    background: #000;
+    color: white;
+}
+
+footer{
+    height: 8vh;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    float: left;
+    border: 2px solid #000;
+}
+
+/*---------------------- FORMULARIO DE REGISTRO E INICIO DE SESION ----------------------*/
+#Registro{
+    width: 432px;
+    height: auto;
+    overflow: hidden;
+    padding: 5px;
+    float: left;
+}
+
+#InicioSesion{
+    width: 432px;
+    height: auto;
+    overflow: hidden;
+    padding: 5px;
+    float:right;
+}
+
